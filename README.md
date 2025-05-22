@@ -57,8 +57,6 @@ A simple form interface is provided in the `templates/loan_form.html` file. User
 
 ## 🛠 Setup Instructions
 
-### 1. Clone the repository
-```bash
 git clone https://github.com/jahid1066/Loan-Approval-Prediction.git
 cd Loan-Approval-Prediction
 
