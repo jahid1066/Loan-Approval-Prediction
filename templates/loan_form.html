@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+</head>
+<body>
+    <h1>Loan Application Form</h1>
+    <form action="/loan_status" method="POST">
+        <label>No Of Dependent:</label><br>
+        <input type="number" name="No_Of_Dependent" required><br>
+
+        <label>Education (1 = Graduated, 0 = Not Graduated):</label><br>
+        <input type="number" name="Education" required><br>
+
+        <label>Self Employed (1 = Yes, 0 = No):</label><br>
+        <input type="number" name="Self_Employed" required><br>
+
+        <label>Annual Income:</label><br>
+        <input type="number" name="Annual_Income" required><br>
+
+        <label>Loan Amount:</label><br>
+        <input type="number" name="Loan_Amount" required><br>
+
+        <label>Loan Term (Months):</label><br>
+        <input type="number" name="Loan_Term" required><br>
+
+        <label>Cibil Score:</label><br>
+        <input type="number" name="Cibil_Score" required><br>
+
+        <label>Total Assets:</label><br>
+        <input type="number" name="Total_Assets" required><br><br>
+
+        <button type="submit">Submit Loan Application</button>
+    </form>
+
+    {% if predict_result %}<br>
+        <p>{{predict_result | safe}}</p>
+    {% endif %}
+
+
+</body>
+</html>
